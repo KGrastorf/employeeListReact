@@ -10,7 +10,7 @@ serviceCalculator = function(datestr){
   var daynow = now.getDate()/(31*12);
   var nowstr = yearnow + monthnow + daynow;
 
-  var service = Math.round((nowstr - newdatestr)*100)/100;
+  var service = Math.floor(nowstr - newdatestr);
   return service;
 
 }
@@ -44,7 +44,7 @@ employeeList = [
     name: "Michael Simon",
     position: "Office Cook",
     hireDate: "07/06/2010",
-    imgurl: "http://www.bullz-eye.com/television/interviews/2010/images/michael_symon/michael_symon_01.jpg",
+    imgurl: "http://previews.123rf.com/images/kurhan/kurhan1201/kurhan120100042/11861111-Chef-man--Stock-Photo-chef-cook-happy.jpg",
     DOB: "03/12/1976"
   },{
     name: "Michael Scott",
@@ -68,7 +68,7 @@ employeeList = [
     name: "Bob Higgins",
     position: "The Actual Security Guard",
     hireDate: "09/03/2011",
-    imgurl: "http://1.media.collegehumor.cvcdn.com/57/18/0fae99c48dd98c48f6c195d95ba5f13a.jpg",
+    imgurl: "https://thenypost.files.wordpress.com/2014/03/guardmain.jpg?quality=90&strip=all&w=664&h=441&crop=1",
     DOB: "03/25/1966"
   }
 ]

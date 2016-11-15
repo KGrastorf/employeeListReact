@@ -68,11 +68,7 @@ ReactDOM.render(
 * The next thing we should do is map through the list of employees. Since React doesn't have a list feature, we have to do it manually. In the Employees component, setup a new variable called employeeNodes and set it equal to the result of a map function that maps through the data property. Have the map function return an Employee component for each employee in the list. It should look something like this.
 
 ```
-var employeeNodes = this.props.data.map(function(employee) {
-  return (
-    <Employee/>
-  );
-});
+{employeeNodes}
 ```
 
 * After this has mapped through, we will want to return the result of this as rendered JSX. So, using curly brackets, you can just place that variable name into a set of outer div tags, and the component will render everything that the map function has processed.
